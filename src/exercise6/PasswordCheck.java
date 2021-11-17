@@ -34,7 +34,7 @@ public class PasswordCheck {
 
             if (AllLettersAndDigits && digitCount>=2){
                 PasswordValid=true;
-                System.out.println("Password Valid!");
+                System.out.println("Password valid!");
             }
         }while(!PasswordValid);
     }
