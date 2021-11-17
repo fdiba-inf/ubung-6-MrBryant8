@@ -15,6 +15,7 @@ public class PasswordCheck {
             }
 
             boolean AllLettersAndDigits=true;
+            int digitCount=0;
 
             for (int i = 0; i < password.length(); i++) {
                 char symbol = password.charAt(i);
@@ -23,29 +24,18 @@ public class PasswordCheck {
                     AllLettersAndDigits = false;
                     break;
                 }
-                int digitCount=0;
-                boolean Digit=Character.isDigit(symbol);
-                if(Digit){
-                    digitCount++;
-                }
-                int digitCount=0;
+
                 boolean Digit=Character.isDigit(symbol);
                 if(Digit){
                     digitCount++;
                 }
             }
 
-            int digitCount=0;
-            boolean Digit=Character.isDigit(symbol);
-            if(Digit){
-                digitCount++;
-            }
 
             if (AllLettersAndDigits && digitCount>=2){
                 PasswordValid=true;
                 System.out.println("Password Valid!");
             }
-
         }while(!PasswordValid);
     }
 }
