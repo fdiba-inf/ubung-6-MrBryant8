@@ -7,7 +7,7 @@ public class PasswordCheck {
         Scanner input = new Scanner(System.in);
         boolean PasswordValid=false;
         do {
-            System.out.println("Enter a password: ");
+            //System.out.println("Enter a password: ");
             String password= input.nextLine();
 
             if(password.length()<8){
